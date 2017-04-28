@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [MB WAP]" parallel="tests" allow-return-values="true">
+  <test name="Sanity Test cases(failed)" parallel="tests">
+    <classes>
+      <class name="com.mb.android.mbApp.tests.launch">
+        <methods>
+          <include name="Launch"/>
+        </methods>
+      </class> <!-- com.mb.android.mbApp.tests.launch -->
+      <class name="com.mb.android.mbApp.tests.postPropertyTest">
+        <methods>
+          <include name="postPropertyt"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.mb.android.mbApp.tests.postPropertyTest -->
+    </classes>
+  </test> <!-- Sanity Test cases(failed) -->
+</suite> <!-- Failed suite [MB WAP] -->

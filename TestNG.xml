@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MB WAP" allow-return-values="true" verbose="1" parallel="tests" thread-count="1">
+    <test name="Sanity Test cases">
+    
+     
+        <classes>
+            <class name="com.mb.android.mbApp.tests.launch"/>
+            <class name="com.mb.android.mbApp.tests.loginRegistationTest"/>
+         
+        </classes>
+    </test>
+     <listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  </listeners>
+    
+    
+</suite>
