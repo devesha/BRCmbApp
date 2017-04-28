@@ -156,7 +156,9 @@ public class Board {
 	    	 	util.swypBoard();
 	    	 	util.swypBoard();
 	    	 	this.dataValidation();
-	    	 	driver.navigate().back();}
+	    	 	driver.navigate().back();
+	    	 	}
+	    	 	//
 	    	 //	driver.findElement(By.className(menuClass)).click();
 	    	 	
 	     }
