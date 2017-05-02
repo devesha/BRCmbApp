@@ -31,8 +31,8 @@ public class launch {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities .setCapability(CapabilityType. BROWSER_NAME, "");
         capabilities .setCapability("platformName" , "Android" );
-        capabilities .setCapability("deviceName" ,"nexus 7" );
-        capabilities .setCapability("platformVersion" , "7.1.1" );
+        capabilities .setCapability("deviceName" ,"Sparkle V" );
+        capabilities .setCapability("platformVersion" , "6.0.1" );
         capabilities .setCapability("app" , app .getAbsolutePath());
         capabilities .setCapability("appPackage" , "com.timesgroup.brokerconnectmagicbricks" );
         capabilities .setCapability("appActivity" ,"com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen" );

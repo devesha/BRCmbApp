@@ -1,7 +1,5 @@
 package com.mb.brc.common;
 
-import io.appium.java_client.android.AndroidDriver;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -19,7 +17,6 @@ import org.testng.Reporter;
 
 
 import atu.testng.reports.ATUReports;
-import atu.testng.reports.utils.Utils;
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
 

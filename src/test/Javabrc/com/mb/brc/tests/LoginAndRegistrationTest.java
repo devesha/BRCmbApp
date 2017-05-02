@@ -108,7 +108,7 @@ public class LoginAndRegistrationTest extends launch{
 	    
 	}
 	
-	@Test(priority=3,enabled=false)
+	@Test(priority=3,enabled=true)
 	public void  Registration()
 	{
 		funcToExcecute="DO Registration";

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Current Run Reports</title>
+
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script type="text/javascript" src="pieChart.js"></script>
+
+<script language="javascript" type="text/javascript">$(document).ready(function() { $(".video").hide();$("#showmenu").show(); $('#showmenu').click(function(){ $('.video').toggle("slide"); }); });</script><style>#showmenu{text-align:center; padding-top:350px;color: #585858; font-size: 14px;}#video{height: 550px;    margin-top: 5px;    width: 97%;    border-style: solid;    border-width: 1px;    border-color: #21ABCD;    /* Shadow for boxes */    -moz-box-shadow: 0 0 10px #CCCCCC;    -ms-box-shadow: 0 0 10px #CCCCCC;    -webkit-box-shadow: 0 0 10px #CCCCCC;    box-shadow: 0 0 10px #CCCCCC;    zoom: 1;    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=0),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=90),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=180),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=270);    background-color: white;}</style><script language="javascript" type="text/javascript">
+$(document).ready(function() {
+	$('#tcFilter').on('change',function(){
+    if($(this).val()=='pass'){
+        $('.pass').show();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	if($(this).val()=='fail'){
+        $('.pass').hide();
+		$('.fail').show();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	
+	if($(this).val()=='skip'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').show();
+		$('.config').hide();
+    }
+	
+if($(this).val()=='tests'){ $('.pass').show(); $('.fail').show(); $('.skip').show(); $('.config').hide(); }	if($(this).val()=='config'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').show();
+    }
+	
+	if($(this).val()=='all'){
+        $('.pass').show();
+		$('.fail').show();
+		$('.skip').show();
+		$('.config').show();
+    }
+  });
+});       
+</script>
+    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../HTML_Design_Files/IMG/atu.jpg" alt="Logo" height="70" width="140" /> <br/><i style="float:left;padding-left:20px;font-size:12px">Reflections of Visionary Minds</i></td>
+                <td id="headertext">
+                    ATU Graphical Reports for Selenium -  TestNG<div style="padding-right:20px;float:right"><img src="../../HTML_Design_Files/IMG/" height="70" width="140" /> </i></div></td>
+
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+                    <div class="info">
+                        The following pie chart demonstrates the percentage of Passed, Failed and Skipped Test Cases<br/>
+                        Time Taken for Executing below Test Cases: <b>523 Sec</b> <br/>
+                        Current Run Number: <b>Run 9</b>
+                    </div>
+<div class="info"><br/><b>Run Description</b><br/><br/>Here you can give description about the current Run</div>                    <div>
+                        <div class="chartStyle summary" style="width: 32%;background-color: #3B9C9C;">
+                            <b>Summary</b><br/><br/>
+                            <table>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>01-May-2017 01:20:20</td>
+                            </tr>
+                            <tr>
+                                <td>Total Test Cases</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>Passed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>8</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Failed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>5</td>
+                            </tr>
+
+                            <tr>
+                                <td>Skipped</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>0</td>
+                            </tr>
+                        </table> 
+                        </div>                        <div class="chartStyle" style="text-align: left;margin-left: 30px;float: left;width: 60%;">                        
+                            <div id="chart" style="height:300px;color:black;"></div>
+                        </div>
+                    </div>
+                    <div>
+
+<p id="showmenu">No Video Recording Available</p>
+<div style="float:left;  color: #585858; font-size: 14px;">	<select id="tcFilter" class="filter">
+						<option class="filterOption" value="all">All Methods</option>
+						<option class="filterOption" value="tests">Test Methods</option>
+						<option class="filterOption" value="pass">Passed Test Cases</option>
+						<option class="filterOption" value="fail">Failed Test Cases</option>
+						<option class="filterOption" value="skip">Skipped Test Cases</option>
+						<option class="filterOption" value="config">Configuration Methods</option>
+					</select>	Filter The Methods Based on Selection</div>
+                        <table id="tableStyle" class="chartStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>Package Name</th>
+                                <th>Class Name</th>
+                                <th>Method Type</th>
+                                <th>Test Case Name</th>
+<th>Iteration</th>                                <th>Time</th>
+                                <th style="width: 7%">Status</th>
+                            </tr>
+
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">interstialScreen</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\interstialScreen_Iteration1\interstialScreen.html">8 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">login</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\login_Iteration1\login.html">22 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">coachMark</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\coachMark_Iteration1\coachMark.html">3 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">Board</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Board_Iteration1\Board.html">36 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">exclusive</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\exclusive_Iteration1\exclusive.html">74 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">PostPropertyRequirement</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\PostPropertyRequirement_Iteration1\PostPropertyRequirement.html">75 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">postRequirement</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postRequirement_Iteration1\postRequirement.html">52 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all pass">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">MyPostContent</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPostContent_Iteration1\MyPostContent.html">76 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">Registration</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\Registration_Iteration1\Registration.html">20 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">BoardContent</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\BoardContent_Iteration1\BoardContent.html">36 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">shorlist</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\shorlist_Iteration1\shorlist.html">10 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">postUpdate</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\postUpdate_Iteration1\postUpdate.html">37 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all fail">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">Test Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">MyPost</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\MyPost_Iteration1\MyPost.html">26 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">Before Suite</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">LaunchApp</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\LaunchApp_Iteration1\LaunchApp.html">41 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">32 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">15 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">16 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">27 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">15 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">5 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">13 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">16 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">10 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">16 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">17 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">13 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">16 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">15 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">5 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">0 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">Before Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">launcha</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\launcha_Iteration1\launcha.html">17 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config">
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">com.mb.brc.tests</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">LoginAndRegistrationTest</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">After Method</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">aftermethod</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">1</a></td>
+                                <td><a href="Default suite\Default test\com\mb\brc\tests\LoginAndRegistrationTest\aftermethod_Iteration1\aftermethod.html">15 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>            <tr id="footer">
+                <td colspan="2">
+                    Best Viewed in &nbsp;
+                    <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> &nbsp;
+                    <a href="http://www.apple.com/in/safari/">Safari</a>&nbsp;
+                    <a href="http://www.google.com/chrome/">Chrome</a>&nbsp;
+                    <a href="http://windows.microsoft.com/en-IN/internet-explorer/download-ie">IE 9 & Above</a>&nbsp;
+                    &nbsp;
+ATU Reporter Version: v5.1.1                    &nbsp;
+                    Reports by: <a href="http://automationtestingutilities.blogspot.in/">Automation Testing Utilities</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

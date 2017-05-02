@@ -6,13 +6,12 @@
       <class name="com.mb.brc.tests.LoginAndRegistrationTest">
         <methods>
           <include name="BoardContent"/>
-          <include name="MyPostContent"/>
           <include name="LaunchApp"/>
           <include name="MyPost"/>
-          <include name="PostPropertyRequirement"/>
           <include name="aftermethod"/>
           <include name="launcha"/>
-          <include name="postRequirement"/>
+          <include name="shorlist"/>
+          <include name="Registration"/>
           <include name="postUpdate"/>
         </methods>
       </class> <!-- com.mb.brc.tests.LoginAndRegistrationTest -->

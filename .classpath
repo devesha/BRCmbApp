@@ -24,8 +24,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Development/All Jars/poi-ooxml-3.10.1-20140818.jar"/>
-	<classpathentry kind="lib" path="D:/Development/All Jars/poi-3.9.jar"/>
 	<classpathentry kind="lib" path="D:/Development/All Jars/DB jar/commons-io-1.3.2.jar"/>
 	<classpathentry kind="lib" path="D:/MagicBricks/db2jcc.jar"/>
 	<classpathentry kind="lib" path="D:/MagicBricks/db2jcc_license_cisuz.jar"/>
@@ -34,5 +32,27 @@
 	<classpathentry kind="lib" path="D:/MagicBricks/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Devesh.Arora/Downloads/RelianceJioAssignment-master/lib/support/ATUReporter_Selenium_testNG_5.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Devesh.Arora/Downloads/RelianceJioAssignment-master/lib/support/ATUTestRecorder_2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-examples-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-excelant-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/poi-scratchpad-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/sikuli-api-1.0.2-standalone.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/sikulixapi.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="D:/Development/MagicBricks_PostProperty_TestNG/MagicBricks_PostProperty_TestNG/lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
