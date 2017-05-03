@@ -11,21 +11,15 @@
     <classes>
       <class name="com.mb.brc.tests.LoginAndRegistrationTest">
         <methods>
-          <include name="BoardContent"/>
+          <include name="MyPostContent"/>
           <include name="LaunchApp"/>
           <include name="MyPost"/>
           <include name="PostPropertyRequirement"/>
-          <include name="interstialScreen"/>
-          <include name="exclusive"/>
-          <include name="Registration"/>
-          <include name="Board"/>
-          <include name="postRequirement"/>
-          <include name="MyPostContent"/>
           <include name="aftermethod"/>
           <include name="launcha"/>
           <include name="shorlist"/>
+          <include name="postRequirement"/>
           <include name="postUpdate"/>
-          <include name="coachMark"/>
         </methods>
       </class> <!-- com.mb.brc.tests.LoginAndRegistrationTest -->
     </classes>
