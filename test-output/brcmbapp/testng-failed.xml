@@ -14,12 +14,9 @@
           <include name="MyPostContent"/>
           <include name="LaunchApp"/>
           <include name="MyPost"/>
-          <include name="PostPropertyRequirement"/>
           <include name="aftermethod"/>
           <include name="launcha"/>
           <include name="shorlist"/>
-          <include name="postRequirement"/>
-          <include name="postUpdate"/>
         </methods>
       </class> <!-- com.mb.brc.tests.LoginAndRegistrationTest -->
     </classes>

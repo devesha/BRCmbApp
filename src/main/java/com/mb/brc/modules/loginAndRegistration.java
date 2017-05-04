@@ -62,7 +62,7 @@ public class loginAndRegistration {
 		private String registrationSubmitBtnId="register_button";
 		private String reqIcon_id="req_icon";
 		private String propIcon_Id="property";
-		
+		private String textLoginScrId="message";
 		  
 	  //********************************************************************************
 	
@@ -73,6 +73,8 @@ public class loginAndRegistration {
 		
 	public void login(String mobileNumber) throws InterruptedException
 {
+		 ATUReports.add("Login", LogAs.INFO, new CaptureScreen(
+					ScreenshotOf.BROWSER_PAGE));	
 	try
 	{
 	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		
@@ -106,7 +108,19 @@ public class loginAndRegistration {
 		System.out.println("Single id mapped"); 
 	 }	
 		Thread.sleep(3000); 
-	    obj1=new DatabaseAccessObject();
+		 ATUReports.add("Check whether Mobile number contain", LogAs.INFO, new CaptureScreen(
+					ScreenshotOf.BROWSER_PAGE));
+		String compareText = driver.findElement(By.id(textLoginScrId)).getText();
+		if(compareText.contains(mobileNumber))
+		{
+			ATUReports.add("Pass Step", LogAs.PASSED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+		}else
+		{
+			ATUReports.add("Check whether Mobile number contain : Fail", LogAs.FAILED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+		}
+		obj1=new DatabaseAccessObject();
 		otp = obj1.getOtp(mobileNumber);
 		System.out.println("OTP:" + otp);
 				

@@ -6,6 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 
+import atu.testng.reports.ATUReports;
+import atu.testng.reports.logging.LogAs;
+import atu.testng.selenium.reports.CaptureScreen;
+import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
+
 import com.mb.brc.common.UtilFunctions;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -43,6 +48,9 @@ public class Board {
 	
 	public void BoardVal() throws InterruptedException
 	   {
+		ATUReports.add("Board", LogAs.INFO, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+		try{
 		   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		   try {
 				driver.findElement(By.id(callButtonId));
@@ -87,10 +95,19 @@ public class Board {
 			  driver.findElement(By.id(boardMenu_Id)).click();
 			  
 		  }
+		}catch(NoSuchElementException e)
+		{
+			ATUReports.add("Board : Fail", LogAs.FAILED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+			
+		}
 		   
 	   }
 	   public void dataValidation()
 	   {
+		   try{
+			   ATUReports.add("Data Validation", LogAs.INFO, new CaptureScreen(
+						ScreenshotOf.DESKTOP));   
 		   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    	String CompanyNameboard = driver.findElement(By.id(companyNameBoardId)).getText();
 		 	String timeStampboard = driver.findElement(By.id(timeBoardId)).getText();
@@ -100,12 +117,23 @@ public class Board {
 		 	String companyNameDetail = driver.findElement(By.id(companyNameDetailId)).getText();
 		 	Assert.assertEquals(CompanyNameboard,companyNameDetail,"Board and SRP data not Matching");
 		 	Assert.assertEquals(timeStampboard,timeStampDetail, "Board and SRP data not Matching");	
+	   }catch(NoSuchElementException e)
+		{
+			ATUReports.add("Data Validation : Fail", LogAs.FAILED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+			
+		}
 	   	
 	   }
 	    
 	     public void boardContent() throws InterruptedException 
 	     {
-	    	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	    	 try{
+	    		 ATUReports.add("boardContent", LogAs.INFO, new CaptureScreen(
+	 					ScreenshotOf.DESKTOP));
+	    		 
+	    		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	    	 
 	    	 	//All tab data validation
 	    	    driver.findElement(By.className(menuClass)).click();
 	    	 	driver.findElement(By.id(boardMenu_Id)).click();
@@ -157,7 +185,15 @@ public class Board {
 	    	 	util.swypBoard();
 	    	 	this.dataValidation();
 	    	 	driver.navigate().back();
+	    	 	ATUReports.add("boardContent", LogAs.PASSED, new CaptureScreen(
+	 					ScreenshotOf.DESKTOP));
 	    	 	}
+	    	 }catch(NoSuchElementException e)
+	 		{
+	 			ATUReports.add("boardContent : Fail", LogAs.FAILED, new CaptureScreen(
+	 					ScreenshotOf.DESKTOP));
+	 			
+	 		}
 	    	 	//
 	    	 //	driver.findElement(By.className(menuClass)).click();
 	    	 	

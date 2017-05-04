@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="6" ignored="2" total="14" passed="6">
+<testng-results skipped="0" failed="3" ignored="2" total="14" passed="9">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -67,23 +67,71 @@
     <line>
       <![CDATA[STEP22]]>
     </line>
+    <line>
+      <![CDATA[STEP23]]>
+    </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[STEP26]]>
+    </line>
+    <line>
+      <![CDATA[STEP27]]>
+    </line>
+    <line>
+      <![CDATA[STEP28]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[STEP30]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[STEP32]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[STEP34]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[STEP36]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[STEP38]]>
+    </line>
   </reporter-output>
-  <suite name="brcmbapp" duration-ms="304703" started-at="2017-05-03T10:59:03Z" finished-at="2017-05-03T11:04:08Z">
+  <suite name="brcmbapp" duration-ms="7722330" started-at="2017-05-04T05:01:03Z" finished-at="2017-05-04T07:09:46Z">
     <groups>
     </groups>
-    <test name="Sanity Test cases" duration-ms="304703" started-at="2017-05-03T10:59:03Z" finished-at="2017-05-03T11:04:08Z">
+    <test name="Sanity Test cases" duration-ms="7722330" started-at="2017-05-04T05:01:03Z" finished-at="2017-05-04T07:09:46Z">
       <class name="com.mb.brc.tests.launch">
-        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.mb.brc.tests.launch@3901d134]" name="LaunchApp" is-config="true" duration-ms="47064" started-at="2017-05-03T16:28:16Z" finished-at="2017-05-03T16:29:03Z">
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.mb.brc.tests.launch@4b29d1d2]" name="LaunchApp" is-config="true" duration-ms="782" started-at="2017-05-04T10:31:02Z" finished-at="2017-05-04T10:31:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApp -->
       </class> <!-- com.mb.brc.tests.launch -->
       <class name="com.mb.brc.tests.LoginAndRegistrationTest">
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-03T16:29:03Z" finished-at="2017-05-03T16:29:03Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T10:31:03Z" finished-at="2017-05-04T10:31:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="interstialScreen()[pri:1, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="interstialScreen" duration-ms="8521" started-at="2017-05-03T16:29:03Z" finished-at="2017-05-03T16:29:12Z">
+        <test-method status="PASS" signature="interstialScreen()[pri:1, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="interstialScreen" duration-ms="8528" started-at="2017-05-04T10:31:03Z" finished-at="2017-05-04T10:31:12Z">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -93,15 +141,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- interstialScreen -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="15" started-at="2017-05-03T16:29:12Z" finished-at="2017-05-03T16:29:12Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-03T16:29:12Z" finished-at="2017-05-03T16:29:12Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="login" duration-ms="39372" started-at="2017-05-03T16:29:12Z" finished-at="2017-05-03T16:29:51Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="login" duration-ms="39010" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:51Z">
           <reporter-output>
             <line>
               <![CDATA[STEP3]]>
@@ -121,72 +169,48 @@
             <line>
               <![CDATA[STEP8]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:29:51Z" finished-at="2017-05-03T16:29:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="12" started-at="2017-05-03T16:29:51Z" finished-at="2017-05-03T16:29:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="coachMark()[pri:4, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="coachMark" duration-ms="7571" started-at="2017-05-03T16:29:51Z" finished-at="2017-05-03T16:29:59Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP9]]>
             </line>
             <line>
               <![CDATA[STEP10]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- coachMark -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:29:59Z" finished-at="2017-05-03T16:29:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-03T16:29:59Z" finished-at="2017-05-03T16:29:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="Board()[pri:5, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="Board" duration-ms="21104" started-at="2017-05-03T16:29:59Z" finished-at="2017-05-03T16:30:20Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP11]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="20" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="coachMark()[pri:4, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="coachMark" duration-ms="5923" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:57Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP12]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- Board -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="5" started-at="2017-05-03T16:30:20Z" finished-at="2017-05-03T16:30:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-03T16:30:20Z" finished-at="2017-05-03T16:30:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="BoardContent()[pri:6, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="BoardContent" duration-ms="68324" started-at="2017-05-03T16:30:20Z" finished-at="2017-05-03T16:31:28Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP13]]>
             </line>
-            <line>
-              <![CDATA[STEP14]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- BoardContent -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:31:28Z" finished-at="2017-05-03T16:31:28Z">
+        </test-method> <!-- coachMark -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-03T16:31:28Z" finished-at="2017-05-03T16:31:28Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="exclusive()[pri:7, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="exclusive" duration-ms="4308" started-at="2017-05-03T16:31:28Z" finished-at="2017-05-03T16:31:32Z">
+        <test-method status="PASS" signature="Board()[pri:5, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="Board" duration-ms="20691" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:32:18Z">
           <reporter-output>
+            <line>
+              <![CDATA[STEP14]]>
+            </line>
             <line>
               <![CDATA[STEP15]]>
             </line>
@@ -194,28 +218,161 @@
               <![CDATA[STEP16]]>
             </line>
           </reporter-output>
-        </test-method> <!-- exclusive -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:31:33Z" finished-at="2017-05-03T16:31:33Z">
+        </test-method> <!-- Board -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="3" started-at="2017-05-03T16:31:33Z" finished-at="2017-05-03T16:31:33Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:32:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="shorlist()[pri:8, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="shorlist" duration-ms="10539" started-at="2017-05-03T16:31:33Z" finished-at="2017-05-03T16:31:43Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="BoardContent()[pri:6, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="BoardContent" duration-ms="64009" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:33:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BoardContent -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="21" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="PostPropertyRequirement()[pri:7, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="PostPropertyRequirement" duration-ms="143017" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:35:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PostPropertyRequirement -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:35:47Z" finished-at="2017-05-04T10:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="47" started-at="2017-05-04T10:35:56Z" finished-at="2017-05-04T10:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="postRequirement()[pri:8, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="postRequirement" duration-ms="51990" started-at="2017-05-04T10:35:56Z" finished-at="2017-05-04T10:36:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP28]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postRequirement -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:36:48Z" finished-at="2017-05-04T10:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T10:36:57Z" finished-at="2017-05-04T10:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="postUpdate()[pri:9, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="postUpdate" duration-ms="33526" started-at="2017-05-04T10:36:57Z" finished-at="2017-05-04T10:37:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP30]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[STEP32]]>
+            </line>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postUpdate -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:37:30Z" finished-at="2017-05-04T10:37:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="79" started-at="2017-05-04T10:37:52Z" finished-at="2017-05-04T10:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="exclusive()[pri:10, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="exclusive" duration-ms="73986" started-at="2017-05-04T10:37:52Z" finished-at="2017-05-04T10:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP34]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exclusive -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T10:39:06Z" finished-at="2017-05-04T10:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="32" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="FAIL" signature="shorlist()[pri:11, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="shorlist" duration-ms="78" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
             <message>
-              <![CDATA[Shortlist not working expected [3 hr. ago, 1:04 PM] but found [1 hr. ago, 3:20 PM]]]>
+              <![CDATA[
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Shortlist not working expected [3 hr. ago, 1:04 PM] but found [1 hr. ago, 3:20 PM]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at com.mb.brc.modules.Board.shorlist(Board.java:238)
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.Board.shorlist(Board.java:265)
 	at com.mb.brc.tests.LoginAndRegistrationTest.shorlist(LoginAndRegistrationTest.java:165)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -239,111 +396,40 @@
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
             <line>
-              <![CDATA[STEP17]]>
+              <![CDATA[STEP36]]>
             </line>
           </reporter-output>
         </test-method> <!-- shorlist -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="15" started-at="2017-05-03T16:31:43Z" finished-at="2017-05-03T16:31:43Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-03T16:31:43Z" finished-at="2017-05-03T16:31:43Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="47" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="PostPropertyRequirement()[pri:9, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="PostPropertyRequirement" duration-ms="39588" started-at="2017-05-03T16:31:43Z" finished-at="2017-05-03T16:32:23Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="MyPost()[pri:12, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="MyPost" duration-ms="131" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 187 milliseconds
+              <![CDATA[
+Command duration or timeout: 18 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2]]>
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 187 milliseconds
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 18 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-	at sun.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
-	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:268)
-	at com.mb.brc.modules.PostPropertyRequirement.postProperty(PostPropertyRequirement.java:130)
-	at com.mb.brc.tests.LoginAndRegistrationTest.PostPropertyRequirement(LoginAndRegistrationTest.java:176)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[STEP18]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- PostPropertyRequirement -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:32:23Z" finished-at="2017-05-03T16:32:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-03T16:32:23Z" finished-at="2017-05-03T16:32:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="postRequirement()[pri:10, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="postRequirement" duration-ms="20618" started-at="2017-05-03T16:32:23Z" finished-at="2017-05-03T16:32:43Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.57 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.57 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -352,161 +438,8 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.Board.HomeFunc(Board.java:216)
-	at com.mb.brc.modules.PostPropertyRequirement.postRequirement(PostPropertyRequirement.java:157)
-	at com.mb.brc.tests.LoginAndRegistrationTest.postRequirement(LoginAndRegistrationTest.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[STEP19]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- postRequirement -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:32:43Z" finished-at="2017-05-03T16:32:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="12" started-at="2017-05-03T16:32:43Z" finished-at="2017-05-03T16:32:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="postUpdate()[pri:11, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="postUpdate" duration-ms="20310" started-at="2017-05-03T16:32:43Z" finished-at="2017-05-03T16:33:04Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.Board.HomeFunc(Board.java:216)
-	at com.mb.brc.modules.PostPropertyRequirement.postUpdate(PostPropertyRequirement.java:196)
-	at com.mb.brc.tests.LoginAndRegistrationTest.postUpdate(LoginAndRegistrationTest.java:198)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[STEP20]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- postUpdate -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:33:04Z" finished-at="2017-05-03T16:33:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="4" started-at="2017-05-03T16:33:04Z" finished-at="2017-05-03T16:33:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="MyPost()[pri:12, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="MyPost" duration-ms="20341" started-at="2017-05-03T16:33:04Z" finished-at="2017-05-03T16:33:24Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.31 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.31 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.MyPost.myPost(MyPost.java:48)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.MyPost.myPost(MyPost.java:52)
 	at com.mb.brc.tests.LoginAndRegistrationTest.MyPost(LoginAndRegistrationTest.java:211)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -530,44 +463,40 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
             <line>
-              <![CDATA[STEP21]]>
+              <![CDATA[STEP37]]>
             </line>
           </reporter-output>
         </test-method> <!-- MyPost -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:33:24Z" finished-at="2017-05-03T16:33:24Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-03T16:33:24Z" finished-at="2017-05-03T16:33:24Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="MyPostContent()[pri:13, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="MyPostContent" duration-ms="43805" started-at="2017-05-03T16:33:24Z" finished-at="2017-05-03T16:34:08Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="MyPostContent()[pri:13, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="MyPostContent" duration-ms="78" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[
+Command duration or timeout: 31 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description("Budget").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("Budget").instance(0));}]]>
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 31 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.160.235', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
+System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description("Budget").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("Budget").instance(0));}
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -576,11 +505,8 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:244)
-	at io.appium.java_client.android.AndroidDriver.scrollToExact(AndroidDriver.java:65)
-	at com.mb.brc.modules.MyPost.dataValidation(MyPost.java:104)
-	at com.mb.brc.modules.MyPost.MyPostContent(MyPost.java:127)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.MyPost.MyPostContent(MyPost.java:128)
 	at com.mb.brc.tests.LoginAndRegistrationTest.MyPostContent(LoginAndRegistrationTest.java:222)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -604,14 +530,14 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
             <line>
-              <![CDATA[STEP22]]>
+              <![CDATA[STEP38]]>
             </line>
           </reporter-output>
         </test-method> <!-- MyPostContent -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-03T16:34:08Z" finished-at="2017-05-03T16:34:08Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->

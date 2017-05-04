@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
+                    <span class="method-stats">12 methods, 3 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,21 +108,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="MyPostContent">MyPostContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="PostPropertyRequirement">PostPropertyRequirement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="postRequirement">postRequirement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="postUpdate">postUpdate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,6 +136,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="PostPropertyRequirement">PostPropertyRequirement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="coachMark">coachMark</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -167,6 +157,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="postRequirement">postRequirement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-brcmbapp" title="com.mb.brc.tests.LoginAndRegistrationTest" hash-for-method="postUpdate">postUpdate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-brcmbapp -->
@@ -192,24 +192,19 @@
                   <a name="MyPost">
                   </a> <!-- MyPost -->
                   <span class="method-name">MyPost</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.31 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 18 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.160.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
+System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.203.86&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.MyPost.myPost(MyPost.java:48)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.MyPost.myPost(MyPost.java:52)
 	at com.mb.brc.tests.LoginAndRegistrationTest.MyPost(LoginAndRegistrationTest.java:211)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
@@ -224,119 +219,20 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
                   <a name="MyPostContent">
                   </a> <!-- MyPostContent -->
                   <span class="method-name">MyPostContent</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 31 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.160.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
+System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.203.86&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(&quot;Budget&quot;).instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(&quot;Budget&quot;).instance(0));}
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.android.AndroidDriver.findElementByAndroidUIAutomator(AndroidDriver.java:244)
-	at io.appium.java_client.android.AndroidDriver.scrollToExact(AndroidDriver.java:65)
-	at com.mb.brc.modules.MyPost.dataValidation(MyPost.java:104)
-	at com.mb.brc.modules.MyPost.MyPostContent(MyPost.java:127)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.MyPost.MyPostContent(MyPost.java:128)
 	at com.mb.brc.tests.LoginAndRegistrationTest.MyPostContent(LoginAndRegistrationTest.java:222)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PostPropertyRequirement">
-                  </a> <!-- PostPropertyRequirement -->
-                  <span class="method-name">PostPropertyRequirement</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (Original error: Soft keyboard not present, cannot hide keyboard) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 187 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.160.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
-	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:268)
-	at com.mb.brc.modules.PostPropertyRequirement.postProperty(PostPropertyRequirement.java:130)
-	at com.mb.brc.tests.LoginAndRegistrationTest.PostPropertyRequirement(LoginAndRegistrationTest.java:176)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="postRequirement">
-                  </a> <!-- postRequirement -->
-                  <span class="method-name">postRequirement</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.57 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.160.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.Board.HomeFunc(Board.java:216)
-	at com.mb.brc.modules.PostPropertyRequirement.postRequirement(PostPropertyRequirement.java:157)
-	at com.mb.brc.tests.LoginAndRegistrationTest.postRequirement(LoginAndRegistrationTest.java:187)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="postUpdate">
-                  </a> <!-- postUpdate -->
-                  <span class="method-name">postUpdate</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.160.235&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, desired={app=D:\Development\Build\BRC_debug_staging.apk, appPackage=com.timesgroup.brokerconnectmagicbricks, appActivity=com.timesgroup.brokerconnectmagicbricks.Activities.SplashScreen, platformVersion=6.0.1, browserName=, platformName=Android, deviceName=Sparkle V}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
-*** Element info: {Using=class name, value=android.widget.ImageButton}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.mb.brc.modules.Board.HomeFunc(Board.java:216)
-	at com.mb.brc.modules.PostPropertyRequirement.postUpdate(PostPropertyRequirement.java:196)
-	at com.mb.brc.tests.LoginAndRegistrationTest.postUpdate(LoginAndRegistrationTest.java:198)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -350,14 +246,25 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
                   <a name="shorlist">
                   </a> <!-- shorlist -->
                   <span class="method-name">shorlist</span>
-                  <div class="stack-trace">java.lang.AssertionError: Shortlist not working expected [3 hr. ago, 1:04 PM] but found [1 hr. ago, 3:20 PM]
-	at com.mb.brc.modules.Board.shorlist(Board.java:238)
+                  <div class="stack-trace">org.openqa.selenium.remote.SessionNotFoundException: 
+Command duration or timeout: 15 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;NODTBSL453AG&apos;, ip: &apos;10.150.203.86&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
+Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at com.mb.brc.modules.Board.shorlist(Board.java:265)
 	at com.mb.brc.tests.LoginAndRegistrationTest.shorlist(LoginAndRegistrationTest.java:165)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 21 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -381,6 +288,13 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
                   <a name="BoardContent">
                   </a> <!-- BoardContent -->
                   <span class="method-name">BoardContent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostPropertyRequirement">
+                  </a> <!-- PostPropertyRequirement -->
+                  <span class="method-name">PostPropertyRequirement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -409,6 +323,20 @@ Session ID: f75c2799-45d4-4864-82e5-32fa759483a2
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postRequirement">
+                  </a> <!-- postRequirement -->
+                  <span class="method-name">postRequirement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postUpdate">
+                  </a> <!-- postUpdate -->
+                  <span class="method-name">postUpdate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -474,58 +402,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BoardContent')
+data.setCell(0, 1, 'PostPropertyRequirement')
 data.setCell(0, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(0, 3, 68324);
+data.setCell(0, 3, 143017);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MyPostContent')
+data.setCell(1, 1, 'exclusive')
 data.setCell(1, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(1, 3, 43805);
+data.setCell(1, 3, 73986);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PostPropertyRequirement')
+data.setCell(2, 1, 'BoardContent')
 data.setCell(2, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(2, 3, 39588);
+data.setCell(2, 3, 64009);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
+data.setCell(3, 1, 'postRequirement')
 data.setCell(3, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(3, 3, 39372);
+data.setCell(3, 3, 51990);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Board')
+data.setCell(4, 1, 'login')
 data.setCell(4, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(4, 3, 21104);
+data.setCell(4, 3, 39010);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'postRequirement')
+data.setCell(5, 1, 'postUpdate')
 data.setCell(5, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(5, 3, 20618);
+data.setCell(5, 3, 33526);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'MyPost')
+data.setCell(6, 1, 'Board')
 data.setCell(6, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(6, 3, 20341);
+data.setCell(6, 3, 20691);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'postUpdate')
+data.setCell(7, 1, 'interstialScreen')
 data.setCell(7, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(7, 3, 20310);
+data.setCell(7, 3, 8528);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shorlist')
+data.setCell(8, 1, 'coachMark')
 data.setCell(8, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(8, 3, 10539);
+data.setCell(8, 3, 5923);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'interstialScreen')
+data.setCell(9, 1, 'MyPost')
 data.setCell(9, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(9, 3, 8521);
+data.setCell(9, 3, 131);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'coachMark')
+data.setCell(10, 1, 'MyPostContent')
 data.setCell(10, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(10, 3, 7571);
+data.setCell(10, 3, 78);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'exclusive')
+data.setCell(11, 1, 'shorlist')
 data.setCell(11, 2, 'com.mb.brc.tests.LoginAndRegistrationTest')
-data.setCell(11, 3, 4308);
+data.setCell(11, 3, 78);
 window.suiteTableData['brcmbapp']= { tableData: data, tableDiv: 'times-div-brcmbapp'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-brcmbapp">
               </div> <!-- times-div-brcmbapp -->
             </div> <!-- times-div -->
@@ -537,6 +465,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">postRequirement</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP28</span>
+                <span class="reporter-method-output">STEP29</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">postUpdate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP30</span>
+                <span class="reporter-method-output">STEP31</span>
+                <span class="reporter-method-output">STEP32</span>
+                <span class="reporter-method-output">STEP33</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BoardContent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP17</span>
+                <span class="reporter-method-output">STEP18</span>
+                <span class="reporter-method-output">STEP19</span>
+                <span class="reporter-method-output">STEP20</span>
+                <span class="reporter-method-output">STEP21</span>
+                <span class="reporter-method-output">STEP22</span>
+                <span class="reporter-method-output">STEP23</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">login</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">STEP3</span>
@@ -545,13 +501,16 @@ return data;
                 <span class="reporter-method-output">STEP6</span>
                 <span class="reporter-method-output">STEP7</span>
                 <span class="reporter-method-output">STEP8</span>
+                <span class="reporter-method-output">STEP9</span>
+                <span class="reporter-method-output">STEP10</span>
+                <span class="reporter-method-output">STEP11</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">exclusive</span>
+              <span class="reporter-method-name">coachMark</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP15</span>
-                <span class="reporter-method-output">STEP16</span>
+                <span class="reporter-method-output">STEP12</span>
+                <span class="reporter-method-output">STEP13</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -562,60 +521,45 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Board</span>
+              <span class="reporter-method-name">exclusive</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP11</span>
-                <span class="reporter-method-output">STEP12</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">coachMark</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP9</span>
-                <span class="reporter-method-output">STEP10</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">BoardContent</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP13</span>
-                <span class="reporter-method-output">STEP14</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">shorlist</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP17</span>
+                <span class="reporter-method-output">STEP34</span>
+                <span class="reporter-method-output">STEP35</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">PostPropertyRequirement</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP18</span>
+                <span class="reporter-method-output">STEP24</span>
+                <span class="reporter-method-output">STEP25</span>
+                <span class="reporter-method-output">STEP26</span>
+                <span class="reporter-method-output">STEP27</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">MyPost</span>
+              <span class="reporter-method-name">Board</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP21</span>
+                <span class="reporter-method-output">STEP14</span>
+                <span class="reporter-method-output">STEP15</span>
+                <span class="reporter-method-output">STEP16</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">MyPostContent</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP22</span>
+                <span class="reporter-method-output">STEP38</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">postUpdate</span>
+              <span class="reporter-method-name">MyPost</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP20</span>
+                <span class="reporter-method-output">STEP37</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">postRequirement</span>
+              <span class="reporter-method-name">shorlist</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP19</span>
+                <span class="reporter-method-output">STEP36</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -652,159 +596,153 @@ return data;
               <div class="chronological-class-name">com.mb.brc.tests.LoginAndRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">47080 ms</span>
+                <span class="method-start">813 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">interstialScreen</span>
-                <span class="method-start">47096 ms</span>
+                <span class="method-start">844 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">55617 ms</span>
+                <span class="method-start">9372 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">55634 ms</span>
+                <span class="method-start">9382 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">55650 ms</span>
+                <span class="method-start">9398 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">95022 ms</span>
+                <span class="method-start">48408 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">95022 ms</span>
+                <span class="method-start">48424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">coachMark</span>
-                <span class="method-start">95034 ms</span>
+                <span class="method-start">48444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">102605 ms</span>
+                <span class="method-start">54382 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">102619 ms</span>
+                <span class="method-start">54392 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Board</span>
-                <span class="method-start">102635 ms</span>
+                <span class="method-start">54409 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">123739 ms</span>
+                <span class="method-start">75100 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">123745 ms</span>
+                <span class="method-start">75106 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BoardContent</span>
-                <span class="method-start">123761 ms</span>
+                <span class="method-start">75122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">192085 ms</span>
+                <span class="method-start">139147 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">192090 ms</span>
+                <span class="method-start">139147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PostPropertyRequirement</span>
+                <span class="method-start">139168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod</span>
+                <span class="method-start">284529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launcha</span>
+                <span class="method-start">293204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">postRequirement</span>
+                <span class="method-start">293251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod</span>
+                <span class="method-start">345257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launcha</span>
+                <span class="method-start">354339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">postUpdate</span>
+                <span class="method-start">354370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod</span>
+                <span class="method-start">387912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launcha</span>
+                <span class="method-start">409816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">exclusive</span>
-                <span class="method-start">192107 ms</span>
+                <span class="method-start">409895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">196431 ms</span>
+                <span class="method-start">483882 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">196437 ms</span>
+                <span class="method-start">7721823 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">shorlist</span>
-                <span class="method-start">196440 ms</span>
+                <span class="method-start">7721855 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">206979 ms</span>
+                <span class="method-start">7721964 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">206995 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">PostPropertyRequirement</span>
-                <span class="method-start">207011 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod</span>
-                <span class="method-start">246599 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launcha</span>
-                <span class="method-start">246610 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">postRequirement</span>
-                <span class="method-start">246627 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod</span>
-                <span class="method-start">267245 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launcha</span>
-                <span class="method-start">267245 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">postUpdate</span>
-                <span class="method-start">267257 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod</span>
-                <span class="method-start">287567 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launcha</span>
-                <span class="method-start">287582 ms</span>
+                <span class="method-start">7722231 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MyPost</span>
-                <span class="method-start">287586 ms</span>
+                <span class="method-start">7722278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">307943 ms</span>
+                <span class="method-start">7722440 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launcha</span>
-                <span class="method-start">307945 ms</span>
+                <span class="method-start">7722706 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MyPostContent</span>
-                <span class="method-start">307962 ms</span>
+                <span class="method-start">7722753 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod</span>
-                <span class="method-start">351767 ms</span>
+                <span class="method-start">7722862 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

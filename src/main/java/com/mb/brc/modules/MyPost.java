@@ -7,6 +7,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 
 import io.appium.java_client.android.AndroidDriver;
+import atu.testng.reports.ATUReports;
+import atu.testng.reports.logging.LogAs;
+import atu.testng.selenium.reports.CaptureScreen;
+import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
 
 import com.mb.brc.common.UtilFunctions;
 
@@ -44,6 +48,7 @@ public class MyPost
 	 
 	public void myPost() throws InterruptedException
 	{
+	try{	
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 	driver.findElement(By.className(menuClass)).click();
 	Thread.sleep(1000);
@@ -88,6 +93,12 @@ public class MyPost
 			 System.out.println("Data not present on requirement tab");
 		 }	
 		}
+	}catch(NoSuchElementException e)
+	{
+		ATUReports.add("My post", LogAs.FAILED, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+	}
+  
 	}
 	
 	

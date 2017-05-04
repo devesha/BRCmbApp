@@ -17,54 +17,54 @@ import atu.testng.reports.listeners.MethodListener;
 public class SetResultPath {
 	
 	FileInputStream proFile_1,proFile_2;
-	File fsrikantaConfig,fsrikantaReportConfig;
+	File fdeveshConfig,fdeveshReportConfig;
 	Properties objProf_1, objProf_2;
 	
 	public void setResultsPath(String sPaths) throws IOException
 	{
 		objProf_1 = new Properties();
-		fsrikantaConfig = new File(System.getProperty("user.dir")+"\\config\\srikanta.properties");
-		System.out.println(fsrikantaConfig);
-		proFile_1 = new FileInputStream(fsrikantaConfig.getPath());
+		fdeveshConfig = new File(System.getProperty("user.dir")+"\\config\\devesh.properties");
+		System.out.println(fdeveshConfig);
+		proFile_1 = new FileInputStream(fdeveshConfig.getPath());
 		objProf_1.load(proFile_1);
 		
-		if(objProf_1.getProperty("srikanta.recording.dir").equals(""))
+		if(objProf_1.getProperty("devesh.recording.dir").equals(""))
 		{
-			objProf_1.setProperty("srikanta.recording.dir","\\Reports\\Video\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.recording.dir","\\Reports\\Video\\"+sPaths+"\\");
 			
 		}
 		else
 		{
-			objProf_1.setProperty("srikanta.recording.dir","");
-			objProf_1.setProperty("srikanta.recording.dir","\\Reports\\Video\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.recording.dir","");
+			objProf_1.setProperty("devesh.recording.dir","\\Reports\\Video\\"+sPaths+"\\");
 			
 		}
-		if(objProf_1.getProperty("srikanta.ScreenShot.dir").equals(""))
+		if(objProf_1.getProperty("devesh.ScreenShot.dir").equals(""))
 		{
-			objProf_1.setProperty("srikanta.ScreenShot.dir","\\Reports\\Images\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.ScreenShot.dir","\\Reports\\Images\\"+sPaths+"\\");
 		}
 		else
 		{
-			objProf_1.setProperty("srikanta.ScreenShot.dir","");
-			objProf_1.setProperty("srikanta.ScreenShot.dir","\\Reports\\Images\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.ScreenShot.dir","");
+			objProf_1.setProperty("devesh.ScreenShot.dir","\\Reports\\Images\\"+sPaths+"\\");
 			
 		}
-		if(objProf_1.getProperty("srikanta.Reports").equals(""))
+		if(objProf_1.getProperty("devesh.Reports").equals(""))
 		{
-			objProf_1.setProperty("srikanta.Reports","\\Reports\\Html\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.Reports","\\Reports\\Html\\"+sPaths+"\\");
 		}
 		else
 		{
-			objProf_1.setProperty("srikanta.Reports","");
-			objProf_1.setProperty("srikanta.Reports","\\Reports\\Html\\"+sPaths+"\\");
+			objProf_1.setProperty("devesh.Reports","");
+			objProf_1.setProperty("devesh.Reports","\\Reports\\Html\\"+sPaths+"\\");
 			
 		}
-		objProf_1.store(new FileOutputStream(fsrikantaConfig), null);
+		objProf_1.store(new FileOutputStream(fdeveshConfig), null);
 		
 		objProf_2 = new Properties();
 		
-		fsrikantaReportConfig = new File(System.getProperty("user.dir")+"\\config\\atu.properties"); 
-		proFile_2 = new FileInputStream(fsrikantaReportConfig.getPath());
+		fdeveshReportConfig = new File(System.getProperty("user.dir")+"\\config\\atu.properties"); 
+		proFile_2 = new FileInputStream(fdeveshReportConfig.getPath());
 		
 		objProf_2.load(proFile_2);
 		
@@ -78,7 +78,7 @@ public class SetResultPath {
 			objProf_2.setProperty("atu.reports.dir","\\Reports\\ATUReports\\"+sPaths+"\\");
 		}
 		
-		objProf_2.store(new FileOutputStream(fsrikantaReportConfig), null);
+		objProf_2.store(new FileOutputStream(fdeveshReportConfig), null);
 	}
 	public static void main(String []args) throws IOException
 	{

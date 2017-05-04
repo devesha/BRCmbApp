@@ -16,7 +16,7 @@ public class DataReader {
 	
 	public String getProperty(String sKey) throws IOException
 	{
-		sTempFile = new File(System.getProperty("user.dir")+"//config//srikanta.properties"); 
+		sTempFile = new File(System.getProperty("user.dir")+"//config//devesh.properties"); 
 		proFileName = new FileInputStream(sTempFile.getPath());
 		objproperties.load(proFileName);
 		sValue =  objproperties.getProperty(sKey);
@@ -26,7 +26,7 @@ public class DataReader {
 	public static void main (String args[]) throws IOException{
 		DataReader test = new DataReader();
 		
-		test.getProperty("srikanta.recording.dir");
+		test.getProperty("devesh.recording.dir");
 		
 		
 	}

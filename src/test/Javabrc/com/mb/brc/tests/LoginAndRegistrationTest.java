@@ -147,7 +147,7 @@ public class LoginAndRegistrationTest extends launch{
 	    brd.boardContent();
 	    ATUReports.add("Pass Step" + funcToExcecute , LogAs.PASSED, new CaptureScreen(ScreenshotOf.DESKTOP));
 	}
-	@Test(priority=7,enabled=true)
+	@Test(priority=10,enabled=true)
 	public void  exclusive() throws InterruptedException
 	{
 		funcToExcecute="verify exclusive Tag";
@@ -156,7 +156,7 @@ public class LoginAndRegistrationTest extends launch{
 	    brd.exclusive();
 	    ATUReports.add("Pass Step" + funcToExcecute , LogAs.PASSED, new CaptureScreen(ScreenshotOf.DESKTOP));
 	}
-	@Test(priority=8,enabled=true)
+	@Test(priority=11,enabled=true)
 	public void  shorlist() throws InterruptedException
 	{
 		funcToExcecute="Verify shorlist";
@@ -167,7 +167,7 @@ public class LoginAndRegistrationTest extends launch{
 	}
 	
 	
-	@Test(priority=9,enabled=true)
+	@Test(priority=7,enabled=true)
 	public void  PostPropertyRequirement() throws InterruptedException
 	{
 		funcToExcecute="post property";
@@ -178,7 +178,7 @@ public class LoginAndRegistrationTest extends launch{
 	    
 	}
 	
-	@Test(priority=10,enabled=true)
+	@Test(priority=8,enabled=true)
 	public void  postRequirement() throws InterruptedException
 	{
 		funcToExcecute="Post Requirment";
@@ -189,7 +189,7 @@ public class LoginAndRegistrationTest extends launch{
 	    
 	}
 	
-	@Test(priority=11,enabled=true)
+	@Test(priority=9,enabled=true)
 	public void  postUpdate() throws InterruptedException
 	{
 		funcToExcecute="postUpdate";

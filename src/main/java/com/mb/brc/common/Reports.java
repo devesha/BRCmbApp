@@ -31,7 +31,7 @@ public class Reports {
 	
 	 {
 		 try {
-			 File fATUPath = new File(objProp.getProperty("srikanta.ATU.Properties.Path"));
+			 File fATUPath = new File(objProp.getProperty("devesh.ATU.Properties.Path"));
 			 
 			 String replaceString =(fATUPath.getAbsolutePath().replace("runner", ""));
 			 String stempPath = StringEscapeUtils.escapeJava(replaceString.replace("\\\\", "\\"));
@@ -53,7 +53,7 @@ public class Reports {
 		try {
 			formater = new
 					SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-			copyFile = new File(objProp.getProperty("srikanta.ScreenShot.dir")+snapshotName+"_"+formater.format(Calendar.getInstance().getTime())+".png");
+			copyFile = new File(objProp.getProperty("devesh.ScreenShot.dir")+snapshotName+"_"+formater.format(Calendar.getInstance().getTime())+".png");
 			String sFilePath = copyFile.getAbsolutePath();
 			FileUtils.copyFile(objScreenCaptureFile ,copyFile);
 			Reporter.log("<a href=" + sFilePath + " target='_blank' >" + snapshotName + "</a>");
@@ -68,7 +68,7 @@ public class Reports {
 	public void writeTestReports(WebDriver driver)
 	{
 		ATUReports.setWebDriver(driver);
-		//ATUReports.setAuthorInfo("srikanta", Utils.getCurrentTime(),"1.0");
+		//ATUReports.setAuthorInfo("devesh", Utils.getCurrentTime(),"1.0");
 		ATUReports.indexPageDescription = "<h3>E.On</h3><br><b>RelianceJio Automation Report</b>";
 		
 	}
@@ -77,8 +77,8 @@ public class Reports {
 		
 		try {
 			try {
-				createDirectoryIfNotExists(objProp.getProperty("srikanta.recording.dir"));
-				recorder = new ATUTestRecorder(objProp.getProperty("srikanta.recording.dir"),objProp.getProperty("srikanta.recording.fileName"),false);
+				createDirectoryIfNotExists(objProp.getProperty("devesh.recording.dir"));
+				recorder = new ATUTestRecorder(objProp.getProperty("devesh.recording.dir"),objProp.getProperty("devesh.recording.fileName"),false);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

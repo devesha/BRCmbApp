@@ -9,6 +9,11 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 
+import atu.testng.reports.ATUReports;
+import atu.testng.reports.logging.LogAs;
+import atu.testng.selenium.reports.CaptureScreen;
+import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
+
 import com.mb.brc.common.UtilFunctions;
 
 
@@ -102,6 +107,10 @@ public class PostPropertyRequirement{
 	
 	public void postProperty() throws InterruptedException
 	{
+		ATUReports.add("postProperty", LogAs.INFO, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+	try{
+    	 
 	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 br.HomeFunc(driver);
 	 driver.findElement(By.id(addIconID)).click();
@@ -147,12 +156,20 @@ public class PostPropertyRequirement{
 	 driver.findElement(By.id(post_ID)).click();
 	 Thread.sleep(3000);
 	 Assert.assertEquals("Board",driver.findElement(By.id(title_ID)).getText(),"postProperty not success");
-		
+	 ATUReports.add("postProperty", LogAs.PASSED, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+	}catch(NoSuchElementException e)
+	{
+		ATUReports.add("postProperty", LogAs.FAILED, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+		driver.navigate().back();
+	}	
 	}
 	
 	
 	public void postRequirement() throws InterruptedException
 	{
+	try{	
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 br.HomeFunc(driver);
 		driver.findElement(By.id(addIconID)).click();
@@ -185,12 +202,20 @@ public class PostPropertyRequirement{
 		 driver.findElement(By.id(post_ID)).click();
 		 Thread.sleep(3000);
 		 Assert.assertEquals("Board",driver.findElement(By.id(title_ID)).getText(),"post Requirment not success");
-
+	}catch(NoSuchElementException e)
+	{
+		ATUReports.add("postProperty", LogAs.FAILED, new CaptureScreen(
+				ScreenshotOf.DESKTOP));
+		driver.navigate().back();
+	}	
 		
 	}
 	 private String tapOkUpdate_ID="ok";
 	public void postUpdate() throws InterruptedException
 	{
+		try{
+			ATUReports.add("postUpdate", LogAs.INFO, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
 		boolean ispresent;
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 br.HomeFunc(driver);
@@ -214,7 +239,16 @@ public class PostPropertyRequirement{
 		driver.findElement(By.id(post_ID)).click();
 		 Thread.sleep(3000);
 		 Assert.assertEquals("Board",driver.findElement(By.id(title_ID)).getText(),"post update not success");
-	}
+		 ATUReports.add("postUpdate", LogAs.PASSED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+		 
+		}catch(NoSuchElementException e)
+		{
+			ATUReports.add("postUpdate", LogAs.FAILED, new CaptureScreen(
+					ScreenshotOf.DESKTOP));
+			driver.navigate().back();
+		}	
+		}
 	
 	
 	
