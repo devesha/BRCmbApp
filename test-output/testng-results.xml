@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="2" total="14" passed="9">
+<testng-results skipped="0" failed="2" ignored="2" total="14" passed="10">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -115,23 +115,26 @@
     <line>
       <![CDATA[STEP38]]>
     </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
   </reporter-output>
-  <suite name="brcmbapp" duration-ms="7722330" started-at="2017-05-04T05:01:03Z" finished-at="2017-05-04T07:09:46Z">
+  <suite name="brcmbapp" duration-ms="499837" started-at="2017-05-12T06:45:56Z" finished-at="2017-05-12T06:54:16Z">
     <groups>
     </groups>
-    <test name="Sanity Test cases" duration-ms="7722330" started-at="2017-05-04T05:01:03Z" finished-at="2017-05-04T07:09:46Z">
+    <test name="Sanity Test cases" duration-ms="499837" started-at="2017-05-12T06:45:56Z" finished-at="2017-05-12T06:54:16Z">
       <class name="com.mb.brc.tests.launch">
-        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.mb.brc.tests.launch@4b29d1d2]" name="LaunchApp" is-config="true" duration-ms="782" started-at="2017-05-04T10:31:02Z" finished-at="2017-05-04T10:31:03Z">
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.mb.brc.tests.launch@3901d134]" name="LaunchApp" is-config="true" duration-ms="40490" started-at="2017-05-12T12:15:16Z" finished-at="2017-05-12T12:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApp -->
       </class> <!-- com.mb.brc.tests.launch -->
       <class name="com.mb.brc.tests.LoginAndRegistrationTest">
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T10:31:03Z" finished-at="2017-05-04T10:31:03Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="46" started-at="2017-05-12T12:15:56Z" finished-at="2017-05-12T12:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="interstialScreen()[pri:1, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="interstialScreen" duration-ms="8528" started-at="2017-05-04T10:31:03Z" finished-at="2017-05-04T10:31:12Z">
+        <test-method status="PASS" signature="interstialScreen()[pri:1, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="interstialScreen" duration-ms="7018" started-at="2017-05-12T12:15:56Z" finished-at="2017-05-12T12:16:03Z">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -141,15 +144,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- interstialScreen -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:12Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="3" started-at="2017-05-12T12:16:03Z" finished-at="2017-05-12T12:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:12Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="13" started-at="2017-05-12T12:16:03Z" finished-at="2017-05-12T12:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="login()[pri:2, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="login" duration-ms="39010" started-at="2017-05-04T10:31:12Z" finished-at="2017-05-04T10:31:51Z">
+        <test-method status="PASS" signature="login()[pri:2, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="login" duration-ms="38085" started-at="2017-05-12T12:16:03Z" finished-at="2017-05-12T12:16:41Z">
           <reporter-output>
             <line>
               <![CDATA[STEP3]]>
@@ -180,15 +183,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:51Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:16:41Z" finished-at="2017-05-12T12:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="20" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:51Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-12T12:16:41Z" finished-at="2017-05-12T12:16:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="coachMark()[pri:4, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="coachMark" duration-ms="5923" started-at="2017-05-04T10:31:51Z" finished-at="2017-05-04T10:31:57Z">
+        <test-method status="PASS" signature="coachMark()[pri:4, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="coachMark" duration-ms="9670" started-at="2017-05-12T12:16:41Z" finished-at="2017-05-12T12:16:51Z">
           <reporter-output>
             <line>
               <![CDATA[STEP12]]>
@@ -198,15 +201,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- coachMark -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:31:57Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:16:51Z" finished-at="2017-05-12T12:16:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:31:57Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="17" started-at="2017-05-12T12:16:51Z" finished-at="2017-05-12T12:16:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="Board()[pri:5, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="Board" duration-ms="20691" started-at="2017-05-04T10:31:57Z" finished-at="2017-05-04T10:32:18Z">
+        <test-method status="PASS" signature="Board()[pri:5, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="Board" duration-ms="22479" started-at="2017-05-12T12:16:51Z" finished-at="2017-05-12T12:17:13Z">
           <reporter-output>
             <line>
               <![CDATA[STEP14]]>
@@ -219,15 +222,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- Board -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:32:18Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:17:13Z" finished-at="2017-05-12T12:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:32:18Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="12" started-at="2017-05-12T12:17:13Z" finished-at="2017-05-12T12:17:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="BoardContent()[pri:6, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="BoardContent" duration-ms="64009" started-at="2017-05-04T10:32:18Z" finished-at="2017-05-04T10:33:22Z">
+        <test-method status="PASS" signature="BoardContent()[pri:6, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="BoardContent" duration-ms="66424" started-at="2017-05-12T12:17:14Z" finished-at="2017-05-12T12:18:20Z">
           <reporter-output>
             <line>
               <![CDATA[STEP17]]>
@@ -252,15 +255,45 @@
             </line>
           </reporter-output>
         </test-method> <!-- BoardContent -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="21" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:33:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:33:22Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:18:20Z" finished-at="2017-05-12T12:18:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="PostPropertyRequirement()[pri:7, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="PostPropertyRequirement" duration-ms="143017" started-at="2017-05-04T10:33:22Z" finished-at="2017-05-04T10:35:45Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="11" started-at="2017-05-12T12:18:20Z" finished-at="2017-05-12T12:18:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="FAIL" signature="PostPropertyRequirement()[pri:7, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="PostPropertyRequirement" duration-ms="78666" started-at="2017-05-12T12:18:20Z" finished-at="2017-05-12T12:19:39Z">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.mb.brc.modules.PostPropertyRequirement.postProperty(PostPropertyRequirement.java:163)
+	at com.mb.brc.tests.LoginAndRegistrationTest.PostPropertyRequirement(LoginAndRegistrationTest.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
           <reporter-output>
             <line>
               <![CDATA[STEP24]]>
@@ -271,45 +304,87 @@
             <line>
               <![CDATA[STEP26]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- PostPropertyRequirement -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:19:39Z" finished-at="2017-05-12T12:19:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="15" started-at="2017-05-12T12:19:39Z" finished-at="2017-05-12T12:19:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="postRequirement()[pri:8, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="postRequirement" duration-ms="51841" started-at="2017-05-12T12:19:39Z" finished-at="2017-05-12T12:20:30Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP27]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- PostPropertyRequirement -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:35:47Z" finished-at="2017-05-04T10:35:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="47" started-at="2017-05-04T10:35:56Z" finished-at="2017-05-04T10:35:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="postRequirement()[pri:8, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="postRequirement" duration-ms="51990" started-at="2017-05-04T10:35:56Z" finished-at="2017-05-04T10:36:48Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP28]]>
             </line>
-            <line>
-              <![CDATA[STEP29]]>
-            </line>
           </reporter-output>
         </test-method> <!-- postRequirement -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:36:48Z" finished-at="2017-05-04T10:36:48Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-12T12:20:30Z" finished-at="2017-05-12T12:20:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T10:36:57Z" finished-at="2017-05-04T10:36:57Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="7" started-at="2017-05-12T12:20:30Z" finished-at="2017-05-12T12:20:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="postUpdate()[pri:9, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="postUpdate" duration-ms="33526" started-at="2017-05-04T10:36:57Z" finished-at="2017-05-04T10:37:30Z">
+        <test-method status="FAIL" signature="postUpdate()[pri:9, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="postUpdate" duration-ms="37816" started-at="2017-05-12T12:20:30Z" finished-at="2017-05-12T12:21:08Z">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.mb.brc.modules.PostPropertyRequirement.postUpdate(PostPropertyRequirement.java:247)
+	at com.mb.brc.tests.LoginAndRegistrationTest.postUpdate(LoginAndRegistrationTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
           <reporter-output>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
             <line>
               <![CDATA[STEP30]]>
             </line>
             <line>
               <![CDATA[STEP31]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- postUpdate -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:21:08Z" finished-at="2017-05-12T12:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="13" started-at="2017-05-12T12:21:08Z" finished-at="2017-05-12T12:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcha -->
+        <test-method status="PASS" signature="exclusive()[pri:10, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="exclusive" duration-ms="6309" started-at="2017-05-12T12:21:08Z" finished-at="2017-05-12T12:21:15Z">
+          <reporter-output>
             <line>
               <![CDATA[STEP32]]>
             </line>
@@ -317,16 +392,16 @@
               <![CDATA[STEP33]]>
             </line>
           </reporter-output>
-        </test-method> <!-- postUpdate -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T10:37:30Z" finished-at="2017-05-04T10:37:30Z">
+        </test-method> <!-- exclusive -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="9" started-at="2017-05-12T12:21:15Z" finished-at="2017-05-12T12:21:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="79" started-at="2017-05-04T10:37:52Z" finished-at="2017-05-04T10:37:52Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="11" started-at="2017-05-12T12:21:15Z" finished-at="2017-05-12T12:21:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="PASS" signature="exclusive()[pri:10, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="exclusive" duration-ms="73986" started-at="2017-05-04T10:37:52Z" finished-at="2017-05-04T10:39:06Z">
+        <test-method status="PASS" signature="shorlist()[pri:11, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="shorlist" duration-ms="15273" started-at="2017-05-12T12:21:15Z" finished-at="2017-05-12T12:21:30Z">
           <reporter-output>
             <line>
               <![CDATA[STEP34]]>
@@ -335,209 +410,44 @@
               <![CDATA[STEP35]]>
             </line>
           </reporter-output>
-        </test-method> <!-- exclusive -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T10:39:06Z" finished-at="2017-05-04T10:39:06Z">
+        </test-method> <!-- shorlist -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:21:30Z" finished-at="2017-05-12T12:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="32" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="16" started-at="2017-05-12T12:21:30Z" finished-at="2017-05-12T12:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="shorlist()[pri:11, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="shorlist" duration-ms="78" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
-            <message>
-              <![CDATA[
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 15 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
-	at com.mb.brc.modules.Board.shorlist(Board.java:265)
-	at com.mb.brc.tests.LoginAndRegistrationTest.shorlist(LoginAndRegistrationTest.java:165)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+        <test-method status="PASS" signature="MyPost()[pri:12, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="MyPost" duration-ms="27483" started-at="2017-05-12T12:21:30Z" finished-at="2017-05-12T12:21:57Z">
           <reporter-output>
             <line>
               <![CDATA[STEP36]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- shorlist -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T12:39:44Z" finished-at="2017-05-04T12:39:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="47" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="MyPost()[pri:12, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="MyPost" duration-ms="131" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
-            <message>
-              <![CDATA[
-Command duration or timeout: 18 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 18 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
-	at com.mb.brc.modules.MyPost.myPost(MyPost.java:52)
-	at com.mb.brc.tests.LoginAndRegistrationTest.MyPost(LoginAndRegistrationTest.java:211)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
-          <reporter-output>
             <line>
               <![CDATA[STEP37]]>
             </line>
           </reporter-output>
         </test-method> <!-- MyPost -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="16" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:21:57Z" finished-at="2017-05-12T12:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="launcha" is-config="true" duration-ms="31" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
+        <test-method status="PASS" signature="launcha()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="launcha" is-config="true" duration-ms="7" started-at="2017-05-12T12:21:57Z" finished-at="2017-05-12T12:21:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcha -->
-        <test-method status="FAIL" signature="MyPostContent()[pri:13, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="MyPostContent" duration-ms="78" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
-            <message>
-              <![CDATA[
-Command duration or timeout: 31 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 31 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'NODTBSL453AG', ip: '10.150.203.86', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_40'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{networkConnectionEnabled=true, desired={}, platformVersion=6.0.1, warnings={}, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, databaseEnabled=false, deviceName=LS1439917481, platform=LINUX}]
-Session ID: 02ee1896-4a71-48ca-93b5-85cc19c4cf8b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
-	at com.mb.brc.modules.MyPost.MyPostContent(MyPost.java:128)
-	at com.mb.brc.tests.LoginAndRegistrationTest.MyPostContent(LoginAndRegistrationTest.java:222)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+        <test-method status="PASS" signature="MyPostContent()[pri:13, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="MyPostContent" duration-ms="138469" started-at="2017-05-12T12:21:57Z" finished-at="2017-05-12T12:24:16Z">
           <reporter-output>
             <line>
               <![CDATA[STEP38]]>
             </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
           </reporter-output>
         </test-method> <!-- MyPostContent -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@7f485fda]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-05-04T12:39:45Z" finished-at="2017-05-04T12:39:45Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.mb.brc.tests.LoginAndRegistrationTest@14d3bc22]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-05-12T12:24:16Z" finished-at="2017-05-12T12:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->

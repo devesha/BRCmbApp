@@ -27,7 +27,7 @@ public class launch {
 		try
 		{
 		File appDir = new File( "D:\\Development\\Build");
-        File app = new File( appDir, "BRC_debug_staging.apk");
+        File app = new File( appDir, "BRC_debug_live.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities .setCapability(CapabilityType. BROWSER_NAME, "");
         capabilities .setCapability("platformName" , "Android" );

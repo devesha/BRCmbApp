@@ -69,12 +69,13 @@ public class LoginAndRegistrationTest extends launch{
 	public void aftermethod()
 	{
 		
-		System.out.println("func Executed : " + funcToExcecute);
+		System.out.println("func Executed  : " + funcToExcecute);
 	}
 	
 	@Test(priority=1,enabled=true)
 	public void interstialScreen()
 	{
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
 		ATUReports.setAuthorInfo("Devesh", Utils.getCurrentTime(), "1.0");
 		 ATUReports.add("walkthroughNext", LogAs.INFO, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 		String nextButtonId = "walkthroughNext";
@@ -87,10 +88,10 @@ public class LoginAndRegistrationTest extends launch{
 	} catch (InterruptedException e) {
 		e.printStackTrace();
 	}
-		//	WebDriverWait wait = new WebDriverWait(driver, 30);
-	  //  wait.until(ExpectedConditions.presenceOfElementLocated(By.id(nextButtonId)));
-		driver.findElementById(nextButtonId).click();
-		driver.findElementById(nextButtonId).click();
+	//		WebDriverWait wait = new WebDriverWait(driver, 30);
+	 //   wait.until(ExpectedConditions.presenceOfElementLocated(By.id(nextButtonId)));
+	//	driver.findElementById(nextButtonId).click();
+	//	driver.findElementById(nextButtonId).click();
 		driver.findElementById(getStartedId).click();
 	}	
 	
